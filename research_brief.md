@@ -18,11 +18,13 @@ Relations: treated_by, billed, has_patient, supported_by, pays.
 Schema: `data/schema.json`.
 
 ## Methods
-1. LLM-only (no retrieval)
-2. BM25 / TF-IDF text RAG
-3. Dense text RAG
-4. GraphRAG: entity/relation extraction -> graph -> 1-2 hop subgraph retrieval
-5. Hybrid RAG
+Planned baseline set; the current prototype implements 3, 5 and 6 only.
+1. LLM-only, no retrieval (planned)
+2. BM25 text RAG (planned; prototype uses TF-IDF)
+3. TF-IDF text RAG (implemented)
+4. Dense text RAG (planned)
+5. GraphRAG: entity/relation extraction -> graph -> 1-2 hop subgraph retrieval (implemented, rule-based operators)
+6. Hybrid RAG (implemented, naive rank fusion)
 
 ## Evaluation
 - Retrieval: Recall@k, Precision@k, MRR@k
