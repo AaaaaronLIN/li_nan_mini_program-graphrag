@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "seed": 42,
+    "n_providers": 30,
+    "n_patients": 120,
+    "n_claims": 300,
+    "n_documents": 900,
+    "n_queries": 30,
+    "note": "Synthetic data only; not real insurance claims."
+  },
+  "k": 5,
+  "summary": [
+    {
+      "method": "GraphRAG",
+      "query_type": "billing_review_suspicion",
+      "n": 4,
+      "recall_at_k": 0.9167,
+      "precision_at_k": 0.5,
+      "mrr_at_k": 0.875
+    },
+    {
+      "method": "GraphRAG",
+      "query_type": "global_top_provider",
+      "n": 2,
+      "recall_at_k": 0.8333,
+      "precision_at_k": 1.0,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "GraphRAG",
+      "query_type": "provider_high_amount",
+      "n": 8,
+      "recall_at_k": 0.8333,
+      "precision_at_k": 1.0,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "GraphRAG",
+      "query_type": "shared_patient_multihop",
+      "n": 8,
+      "recall_at_k": 0.8333,
+      "precision_at_k": 1.0,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "GraphRAG",
+      "query_type": "single_claim_support",
+      "n": 8,
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.6,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "HybridRAG",
+      "query_type": "billing_review_suspicion",
+      "n": 4,
+      "recall_at_k": 0.9167,
+      "precision_at_k": 0.5,
+      "mrr_at_k": 0.875
+    },
+    {
+      "method": "HybridRAG",
+      "query_type": "global_top_provider",
+      "n": 2,
+      "recall_at_k": 0.6667,
+      "precision_at_k": 0.8,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "HybridRAG",
+      "query_type": "provider_high_amount",
+      "n": 8,
+      "recall_at_k": 0.6667,
+      "precision_at_k": 0.8,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "HybridRAG",
+      "query_type": "shared_patient_multihop",
+      "n": 8,
+      "recall_at_k": 0.6667,
+      "precision_at_k": 0.8,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "HybridRAG",
+      "query_type": "single_claim_support",
+      "n": 8,
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.6,
+      "mrr_at_k": 1.0
+    },
+    {
+      "method": "TextRAG",
+      "query_type": "billing_review_suspicion",
+      "n": 4,
+      "recall_at_k": 0.9167,
+      "precision_at_k": 0.5,
+      "mrr_at_k": 0.875
+    },
+    {
+      "method": "TextRAG",
+      "query_type": "global_top_provider",
+      "n": 2,
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "mrr_at_k": 0.0
+    },
+    {
+      "method": "TextRAG",
+      "query_type": "provider_high_amount",
+      "n": 8,
+      "recall_at_k": 0.1667,
+      "precision_at_k": 0.2,
+      "mrr_at_k": 0.3229
+    },
+    {
+      "method": "TextRAG",
+      "query_type": "shared_patient_multihop",
+      "n": 8,
+      "recall_at_k": 0.2292,
+      "precision_at_k": 0.275,
+      "mrr_at_k": 0.4417
+    },
+    {
+      "method": "TextRAG",
+      "query_type": "single_claim_support",
+      "n": 8,
+      "recall_at_k": 0.6667,
+      "precision_at_k": 0.4,
+      "mrr_at_k": 1.0
+    }
+  ]
+}

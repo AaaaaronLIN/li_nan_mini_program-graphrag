@@ -1,0 +1,16 @@
+{
+  "entities": {
+    "Patient": ["patient_id", "age", "sex", "region"],
+    "Provider": ["provider_id", "specialty", "region", "risk_score"],
+    "Claim": ["claim_id", "patient_id", "provider_id", "service_date", "amount", "diagnosis", "procedure", "status"],
+    "Document": ["doc_id", "claim_id", "doc_type", "text"],
+    "Payment": ["payment_id", "claim_id", "amount", "date"]
+  },
+  "relations": [
+    ["Patient", "treated_by", "Provider"],
+    ["Provider", "billed", "Claim"],
+    ["Claim", "has_patient", "Patient"],
+    ["Claim", "supported_by", "Document"],
+    ["Payment", "pays", "Claim"]
+  ]
+}
