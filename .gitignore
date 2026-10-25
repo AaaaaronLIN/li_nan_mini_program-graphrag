@@ -2,3 +2,10 @@ __pycache__/
 *.pyc
 .DS_Store
 .venv/
+.mplconfig/
+# 私人物料，不公开
+email_li_nan.md
+meeting_prep.md
+meeting_cheatsheet.md
+research_brief.html
+research_brief.rtf
